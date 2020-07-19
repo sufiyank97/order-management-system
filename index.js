@@ -15,3 +15,5 @@ app.get("*", (req, res) => {
 app.listen(port, function () {
     console.log('listening on the port', port)
 })
+
+// concurrently \"node index.js\" \"
