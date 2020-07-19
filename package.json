@@ -26,6 +26,6 @@
   },
   "scripts": {
     "start": "webpack-dev-server --progress",
-    "build": "webpack --mode production"
+    "build": "npm install && webpack --mode production"
   }
 }
