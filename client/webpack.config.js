@@ -1,5 +1,5 @@
 const path = require('path')
-
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
     devServer: {
         contentBase: path.resolve(__dirname, './build'),
@@ -27,6 +27,13 @@ module.exports = {
         ]
     },
     output: {
+        path: path.resolve(__dirname, 'build'), // change this
+        publicPath: '/',
         filename: 'bundle.js'
-    }
+    },
+    plugins: [
+        new HtmlWebpackPlugin({
+            template: path.resolve(__dirname, './build/index.html'),
+        }),
+    ]
 }
