@@ -2,7 +2,7 @@ const path = require('path')
 
 module.exports = {
     devServer: {
-        contentBase: path.resolve(__dirname, './src'),
+        contentBase: path.resolve(__dirname, './build'),
         historyApiFallback: true
     },
     entry: ['babel-regenerator-runtime', path.resolve(__dirname, './src/index.js')],
