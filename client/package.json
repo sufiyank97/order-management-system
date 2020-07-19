@@ -24,6 +24,7 @@
     "react-dom": "~16.12.0"
   },
   "scripts": {
-    "start": "webpack-dev-server --progress"
+    "start": "webpack-dev-server --progress",
+    "build": "webpack --mode production"
   }
 }
